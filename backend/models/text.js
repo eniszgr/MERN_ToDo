@@ -7,6 +7,12 @@ const textSchema = new Schema({
     type: String,
     required: true,
   },
+  importance:{
+    type: Number,
+    default: 1, // Default importance level,
+    min: 1, // Minimum importance level
+    max: 5, // Maximum importance level
+  }
 });
 
 const Text = mongo.model('Text', textSchema);

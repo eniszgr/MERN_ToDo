@@ -49,7 +49,7 @@ exports.updateText = async (req, res) => {
         const {id} = req.params;
         const {text} = req.body;
         const updatedText = await Text.findByIdAndUpdate(id,{text}, {new: true});
-        return res.status(201).json(updatedText);
+        return res.status(200).json(updatedText);
 
     } catch (error) {
         console.error("beklenmedik hata", error);

@@ -1,0 +1,11 @@
+/* src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .ubuntu-font {
+    font-family: 'Ubuntu', sans-serif;
+  }
+}

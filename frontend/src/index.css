@@ -1,11 +1,16 @@
-/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  .ubuntu-font {
-    font-family: 'Ubuntu', sans-serif;
+/* base & components layers exist */
+/* special css definition */
+@layer components{
+  .testcss{
+    @apply bg-green-500 text-white p-4 rounded-lg;
   }
+}
+
+/* font definition */
+@theme{
+  --font-ikinci: WDXL Lubrifont TC, sans-serif;
 }
